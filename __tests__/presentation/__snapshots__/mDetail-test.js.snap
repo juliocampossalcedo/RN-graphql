@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test render of image and texts it should renders correctly 1`] = `
+<View>
+  <Image
+    source={
+      {
+        "uri": "",
+      }
+    }
+    style={
+      [
+        {
+          "height": 750,
+          "marginBottom": 50,
+          "width": 750,
+        },
+      ]
+    }
+  />
+  <Text
+    style={
+      [
+        {
+          "fontSize": 20,
+          "fontWeight": "500",
+          "paddingBottom": 20,
+          "textAlign": "center",
+        },
+      ]
+    }
+  >
+    Name: 
+  </Text>
+  <Text
+    style={
+      [
+        {
+          "fontSize": 20,
+          "fontWeight": "500",
+          "paddingBottom": 20,
+          "textAlign": "center",
+        },
+      ]
+    }
+  >
+    Status: 
+  </Text>
+  <Text
+    style={
+      [
+        {
+          "fontSize": 20,
+          "fontWeight": "500",
+          "paddingBottom": 20,
+          "textAlign": "center",
+        },
+      ]
+    }
+  >
+    Species: 
+  </Text>
+  <Text
+    style={
+      [
+        {
+          "fontSize": 20,
+          "fontWeight": "500",
+          "paddingBottom": 20,
+          "textAlign": "center",
+        },
+      ]
+    }
+  >
+    Gender: 
+  </Text>
+  <Text
+    style={
+      [
+        {
+          "fontSize": 20,
+          "fontWeight": "500",
+          "paddingBottom": 20,
+          "textAlign": "center",
+        },
+      ]
+    }
+  >
+    Origin: 
+  </Text>
+</View>
+`;
