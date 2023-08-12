@@ -1,20 +1,30 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+// In App.js in a new project
 
-export default function App() {
+import * as React from 'react';
+
+import client from './src/data/config/client';
+import { ApolloProvider } from '@apollo/client';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import GalleryScreen from './src/presentation/screens/GalleryScreen'
+import DetailScreen from './src/presentation/screens/DetailScreen'
+
+const Stack = createNativeStackNavigator();
+
+
+
+function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <ApolloProvider client={client}>
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName="Gallery">
+          <Stack.Screen name="Gallery" component={GalleryScreen} />
+          <Stack.Screen name="Detail" 
+            component={DetailScreen} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </ApolloProvider>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;

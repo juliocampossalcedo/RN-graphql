@@ -1,0 +1,1 @@
+export { default as AMessage } from './aMessage/message';
